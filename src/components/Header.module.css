@@ -1,0 +1,15 @@
+.header {
+  height: 5.2rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+}
+
+.header__title {
+  margin: 0;
+  margin-left: 3.2rem;
+  cursor: pointer;
+  color: var(--title-color);
+  font-size: 1.7rem;
+  font-weight: 700;
+}

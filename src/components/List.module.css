@@ -1,0 +1,86 @@
+.aside {
+  width: calc(25% - 1rem);
+  min-width: 155px;
+  max-width: 400px;
+  overflow-y: auto;
+  border-right: 1px solid rgba(0,0,0, .1);
+}
+
+.aside::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.aside::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0, .2);
+}
+.aside::-webkit-scrollbar-thumb:hover,
+.aside::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0,0,0, .3);
+}
+.aside::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0, .1);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  padding-right: 2.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.item:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: calc(100% - 1.8rem);
+  bottom: 0;
+  border-bottom: 1px solid rgba(0,0,0, .1);
+}
+
+.item h2 {
+  font-size: 1.7rem;
+  color: var(--primary-text-color);
+}
+
+.item p {
+  font-size: 1.4rem;
+  color: var(--secondary-text-color);
+  margin-top: .5rem;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.spinner svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.spinner span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}
+
+.error__message {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--danger-text-color);
+  margin: 1rem 0;
+  text-align: center;
+}
